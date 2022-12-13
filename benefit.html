@@ -21,7 +21,7 @@
 
 <body>
 
-	<header id="header" class="header__main-page">
+	<header id="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__top">
@@ -34,14 +34,14 @@
 					<nav class="header__nav">
 						<div class="header__nav-desktop menu">
 							<div class="header__logo header__logo-mobile">
-								<a href="#" class="header__logo-link">
+								<a href="/" class="header__logo-link">
 									<img src="assets/images/svg/logo.svg" alt="">
 									<span>Data Fabric</span>
 								</a>
 							</div>
 							<ul>
 								<li class="menu__item">
-									<a href="#" class="menu__item-link">
+									<a href="/" class="menu__item-link">
 										Главная
 									</a>
 								</li class="menu__item">
@@ -51,7 +51,7 @@
 									</a>
 								</li>
 								<li class="menu__item">
-									<a href="#video" class="menu__item-link">
+									<a href="/index.html#video" menu__item-link>
 										Видеоматериал
 									</a>
 								</li>
@@ -76,123 +76,57 @@
 		</div>
 	</header>
 	<main class="main">
-		<section id="intro" class="intro slider">
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
+		
+		<div class="container">
+			<div class="about-wrapper">
+				<aside class="sidebar">
+					<a href="about.html" class="sidebar__link">Что такое Data Fabric?</a>
+					<a href="dataops.html" class="sidebar__link">Цифровизация DataOps-процессов</a>
+					<a href="#" class="sidebar__link active">Подезная идея или хайп?</a>
+				</aside>
+		
+				<main class="about-page">
+					<h1>Полезная идея или хайп?</h1>
+					<div class="about-page__content">
 						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
+							Хотя эта концепция, возможно, сейчас находится в центре внимания руководителей высшего звена,
+							ориентированных на технологии, это не значит, что она в скором времени воплотится в реальность. В
+							отчете Gartner 2021 Hype Cycle for Emerging Technologies ткань данных находится прямо на «пике
+							завышенных ожиданий».
 						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
+						<picture>
+							<source srcset="assets/images/about-pages/benefit-1.webp">
+							<img src="assets/images/about-pages/benefit-1.png" alt="">
+						</picture>
 						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
+							Организации признают ценность концепции ткани данных. Но это развивающаяся технология. Поставщики
+							работают над решениями и встраивают ее компоненты в существующее ПО. Некоторые из них могут
+							предложить решения, которые включают в себя многое из того, что должна делать ткань данных. Однако,
+							по прогнозам Gartner, data fabric достигнет «плато продуктивности» только через 5-10 лет. А пока
+							поставщики будут совершенствовать свои решения, а предприятия — тестировать их.
 						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
 						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
+							Согласно отчету «Enterprise Data Fabric Forrester Wave, Q2 2020» ткань данных представляет собой
+							«горячий, развивающийся рынок». По мнению Forrester, лидерами на нем являются Talend, Oracle, SAP,
+							Denodo Technology, Cambridge Semantics и IBM. В число сильных игроков вошли Qlik, Cloudera,
+							DataRobot, Syncsort, Hitachi Vantara, TIBCO Software и InfoWorks. Претендентами оказались
+							Informatica и Solix Technologies.
 						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
+						<picture>
+							<source srcset="assets/images/about-pages/benefit-2.webp">
+							<img src="assets/images/about-pages/benefit-2.png" alt="">
+						</picture>
+						<p>
+							В то же время Gartner в своем «Magic Quadrant for Data Integration Tools-2020» года назвал лидерами
+							следующие компании: Informatica, IBM, Talend, SAP, Oracle, Denodo и SAS.
+						</p>
+						<picture>
+							<source srcset="assets/images/about-pages/benefit-3.webp">
+							<img src="assets/images/about-pages/benefit-3.png" alt="">
+						</picture>
 					</div>
-				</div>
+				</main>
 			</div>
-		</section>
-		<section class="about" id="about">
-			<div class=" container">
-				<div class="about__wrapper">
-					<h2 class="about__title">
-						О Data Fabric
-					</h2>
-					<div class="about__main">
-						<div class="about__card">
-							<div class="about__card-top about__card-top_1"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-						<div class="about__card">
-							<div class="about__card-top about__card-top_2"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-						<div class="about__card">
-							<div class="about__card-top about__card-top_3"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="video" id="video">
-			<div class="container">
-				<div class="video__wrapper">
-					<h2 class="about__title video__wrapper">
-						Видеоматериал
-					</h2>
-					<div class="video__block">
-						<iframe src="https://www.youtube.com/embed/vQInSPTz7KY" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-		<a href="#" class="telegram">
-			<img src="assets/images/svg/telegram.svg" alt="Написать в Telegram">
-		</a>
-		<div id="progress">
-			<span id="progress-value">&#x1F815;</span>
 		</div>
 	</main>
 

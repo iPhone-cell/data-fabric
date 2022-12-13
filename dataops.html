@@ -21,7 +21,7 @@
 
 <body>
 
-	<header id="header" class="header__main-page">
+	<header id="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__top">
@@ -34,14 +34,14 @@
 					<nav class="header__nav">
 						<div class="header__nav-desktop menu">
 							<div class="header__logo header__logo-mobile">
-								<a href="#" class="header__logo-link">
+								<a href="/" class="header__logo-link">
 									<img src="assets/images/svg/logo.svg" alt="">
 									<span>Data Fabric</span>
 								</a>
 							</div>
 							<ul>
 								<li class="menu__item">
-									<a href="#" class="menu__item-link">
+									<a href="/" class="menu__item-link">
 										Главная
 									</a>
 								</li class="menu__item">
@@ -51,7 +51,7 @@
 									</a>
 								</li>
 								<li class="menu__item">
-									<a href="#video" class="menu__item-link">
+									<a href="/index.html#video" menu__item-link>
 										Видеоматериал
 									</a>
 								</li>
@@ -76,123 +76,63 @@
 		</div>
 	</header>
 	<main class="main">
-		<section id="intro" class="intro slider">
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
-						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
+		
+		<div class="container">
+			<div class="about-wrapper">
+				<aside class="sidebar">
+					<a href="about.html" class="sidebar__link">Что такое Data Fabric?</a>
+					<a href="#" class="sidebar__link active">Цифровизация DataOps-процессов</a>
+					<a href="benefit.html" class="sidebar__link">Подезная идея или хайп?</a>
+				</aside>
+		
+				<main class="about-page">
+					<h1>Цифровизация DataOps-процессов</h1>
+					<div class="about-page__content">
+						<p class="about-page__content-text bold">
+							Под Data Fabric подразумевается следующий обязательный набор характеристик и процессов:
 						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
+						<ul class="about-page__content-list">
+							<li>
+								на каждом шаге обработки информации используется машинное обучение (от анализа получаемых данных
+								до оптимизации алгоритмов их обработки);
+							</li>
+		
+							<li>
+								все потребители и источники данных получают сквозную интеграцию (в том числе и базы/хранилища
+								данных Data Lake) при помощи соответствующих интерфейсов API;
+							</li>
+							<li>
+								вместо монолитных программных платформ используются микро-сервисные архитектуры;
+								в корпоративной IT-среде используется наибольшее число возможных облачных решений;
+								информационные потоки оркестрируются;
+							</li>
+							<li>
+								качество информации повышается после унификации и виртуализации;
+							</li>
+							<li>
+								независимо от типа данных к ним обеспечивается быстрый доступ (из баз данных, хранилищ данных,
+								корпоративных озер данных и т. д.);
+							</li>
+							<li>
+								обеспечение безопасного доступа внутри компании (для разных групп пользователей) для обработки
+								информации параллельно с гибкой настройкой прав доступа к информации для каждой группы клиентов
+								на корпоративном уровне.
+							</li>
+						</ul>
 						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
+							Архитектура Data Fabric идеально укладывается под концепцию DataOps, при помощи которого можно
+							организовать быстрое реагирование на любые изменения в данных, получить максимально высокий уровень
+							прогнозирования, оптимизировать процессы хранения, обработки и обслуживания ресурсов, работающих с
+							информацией.
+							Таким образом, можно сделать вывод, что Data Fabric является средством реализации процессов
+							современной концепции DataOps, обеспечивая оперативное реагирование на события, высокий уровень
+							прогнозируемости, оптимизации обработки и обслуживания ресурсов. В свою очередь, DataOps можно
+							рассматривать как один из инструментов цифровизации бизнеса для перевода предприятия в режим
+							data-driven.
 						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
 					</div>
-				</div>
+				</main>
 			</div>
-			<div class="intro__item">
-				<div class="container">
-					<div class="intro__content">
-						<h1>
-							Data Fabric
-						</h1>
-						<p>
-							Наша команда решила реализовать идею сайта, посвященного одной из самых перспективных технологий
-							2021-2022 года по версии Gartner.
-						</p>
-						<a href="#" class="btn btn_white">
-							Связаться с нами
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="about" id="about">
-			<div class=" container">
-				<div class="about__wrapper">
-					<h2 class="about__title">
-						О Data Fabric
-					</h2>
-					<div class="about__main">
-						<div class="about__card">
-							<div class="about__card-top about__card-top_1"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-						<div class="about__card">
-							<div class="about__card-top about__card-top_2"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-						<div class="about__card">
-							<div class="about__card-top about__card-top_3"></div>
-							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
-							</h3>
-							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
-							</p>
-							<a href="#" class="btn btn_dark about__card-btn">
-								Узнать больше
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="video" id="video">
-			<div class="container">
-				<div class="video__wrapper">
-					<h2 class="about__title video__wrapper">
-						Видеоматериал
-					</h2>
-					<div class="video__block">
-						<iframe src="https://www.youtube.com/embed/vQInSPTz7KY" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-		<a href="#" class="telegram">
-			<img src="assets/images/svg/telegram.svg" alt="Написать в Telegram">
-		</a>
-		<div id="progress">
-			<span id="progress-value">&#x1F815;</span>
 		</div>
 	</main>
 
