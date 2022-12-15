@@ -350,9 +350,14 @@ textarea {
   padding: 0.2em 0;
 }
 
-.about-wrapper {
+.tabs-wrapper {
   display: flex;
   margin: 100px 0px;
+}
+.tabs-wrapper button {
+  border: 0;
+  background: #fff;
+  transition: all 0.3s ease;
 }
 
 .sidebar {
@@ -419,7 +424,7 @@ textarea {
 }
 
 @media (max-width: 1100px) {
-  .about-wrapper {
+  .tabs-wrapper {
     flex-direction: column;
   }
   .sidebar {
@@ -427,7 +432,7 @@ textarea {
     display: flex;
     width: 100%;
   }
-  .sidebar a {
+  .sidebar button {
     text-align: center;
     padding-left: 0;
   }
@@ -436,7 +441,7 @@ textarea {
   .sidebar {
     flex-direction: column;
   }
-  .sidebar a {
+  .sidebar button {
     width: 100%;
   }
 }
@@ -456,7 +461,7 @@ textarea {
   }
 }
 @media (max-width: 404px) {
-  .sidebar a {
+  .sidebar button {
     background: #00C6C6;
     border-radius: 9px;
     color: #fff;
@@ -466,8 +471,8 @@ textarea {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  width: 100%;
   overflow-x: hidden;
-  height: 100%;
 }
 
 body {
@@ -553,7 +558,7 @@ button {
 }
 
 #progress {
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   bottom: 133px;
   right: 100px;
@@ -586,12 +591,15 @@ button {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all 0.3s ease;
   transition-property: background, transform;
   transform-origin: 100% 100%;
   background: #00C6C6;
   z-index: 99999;
   transition: all 0.1s ease;
+}
+
+.modal {
+  height: auto;
 }
 
 .link-grow {
@@ -981,14 +989,48 @@ a.close-modal {
 
 .video {
   padding-bottom: 150px;
+  position: relative;
 }
 .video .video__block {
+  display: block;
   text-align: center;
   max-width: 1495px;
-}
-.video .video__block iframe {
   width: 100%;
   height: 750px;
+  background: url("../images/video/video.jpg") left/cover no-repeat;
+  z-index: 1;
+}
+.video .video__block-play {
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  z-index: 2;
+}
+.video .video__block-play:hover {
+  transform: scale(1.2);
+}
+
+.modal.modal-video {
+  z-index: 3 !important;
+  background: none;
+  max-width: 1690px;
+  width: 100%;
+  height: 750px !important;
+  box-shadow: none;
+}
+.modal.modal-video .close-modal {
+  right: 0 !important;
+  top: 0 !important;
+}
+.modal.modal-video iframe {
+  z-index: 3 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.blocker {
+  z-index: 4 !important;
 }
 
 .footer {
@@ -1057,6 +1099,25 @@ a.close-modal {
   margin-top: 75px;
 }
 
+.slick-dots {
+  width: 200px;
+}
+
+.video__block.wrapper {
+  position: relative;
+}
+
+.hide-cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: none;
+  z-index: 100;
+  pointer-events: none;
+}
+
 @media (max-width: 1566px) {
   .container {
     padding: 0 25px;
@@ -1073,6 +1134,9 @@ a.close-modal {
   }
 }
 @media (max-width: 1300px) {
+  .video .video__block {
+    height: 500px !important;
+  }
   .video .video__block iframe {
     height: 500px;
   }
@@ -1178,6 +1242,9 @@ a.close-modal {
   .header__main-title {
     transition: all 0.3s ease;
   }
+  .video .video__block {
+    height: 350px !important;
+  }
   .video .video__block iframe {
     height: 350px;
   }
@@ -1196,7 +1263,6 @@ a.close-modal {
     margin-right: 22px;
   }
   .slick-arrow {
-    width: 100%;
     bottom: 30px;
   }
   .slick-arrow:hover {
@@ -1227,6 +1293,10 @@ a.close-modal {
 .sidebar.sidebar_active {
   transition: all 0.3s ease;
   margin-top: 350px;
+}
+
+.modal.modal-video {
+  height: 400px;
 }
 
 @media (max-width: 750px) {
@@ -1279,8 +1349,14 @@ a.close-modal {
   .video .about__title {
     width: 160px;
   }
+  .modal.modal-video {
+    height: 300px;
+  }
 }
 @media (max-width: 650px) {
+  .video .video__block {
+    height: 200px !important;
+  }
   .video .video__block iframe {
     height: 200px;
   }
@@ -1292,11 +1368,17 @@ a.close-modal {
   }
 }
 @media (max-width: 410px) {
+  .video .video__block {
+    height: 150px;
+  }
   .video .video__block iframe {
     height: 150px;
   }
   .slick-dots {
     left: 20%;
+  }
+  .modal.modal-video {
+    height: auto;
   }
 }
 @media (max-height: 820px) {

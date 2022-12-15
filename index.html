@@ -95,7 +95,7 @@
 			</div>
 			<div class="intro__item">
 				<div class="container">
-					<div class="intro__content">
+					<div class="intro__content intro__content2">
 						<h1>
 							Data Fabric
 						</h1>
@@ -111,7 +111,7 @@
 			</div>
 			<div class="intro__item">
 				<div class="container">
-					<div class="intro__content">
+					<div class="intro__content intro__content3">
 						<h1>
 							Data Fabric
 						</h1>
@@ -148,10 +148,11 @@
 						<div class="about__card">
 							<div class="about__card-top about__card-top_2"></div>
 							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
+								Как устроены Data Fabric: Big Data и не только
 							</h3>
 							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
+								На текущий момент Data Fabric – это тренд в области Big Data и корпоративного ИТ-сектора, а не
+								готовые технологические решения...
 							</p>
 							<a href="#" class="btn btn_dark about__card-btn">
 								Узнать больше
@@ -160,10 +161,11 @@
 						<div class="about__card">
 							<div class="about__card-top about__card-top_3"></div>
 							<h3 class="about__card-title">
-								Data Fabric в современных компаниях: особенности и преимущества
+								О Data Fabric
 							</h3>
 							<p class="about__card-text">
-								Data Fabric возникла на фоне активного применения данных крупными предприятиями...
+								Data Fabric представляет собой цельную концептуальную архитектуру управления информацией с
+								полным и гибким доступом для работы с ней...
 							</p>
 							<a href="#" class="btn btn_dark about__card-btn">
 								Узнать больше
@@ -179,21 +181,22 @@
 					<h2 class="about__title video__wrapper">
 						Видеоматериал
 					</h2>
-					<div class="video__block">
-						<iframe src="https://www.youtube.com/embed/vQInSPTz7KY" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
+					<a href="#ex2" rel="modal:open" class="video__block wrapper"></a>
+					<a href="#ex2" rel="modal:open" class="video__block-play">
+						<img src="assets/images/video/play.svg" alt="Воспроизвести видео">
+					</a>
 				</div>
 			</div>
+			</div>
+			<div id="ex2" class="modal modal-video">
+				<iframe src="https://www.youtube.com/embed/vQInSPTz7KY" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 			</div>
 		</section>
 		<a href="#" class="telegram">
 			<img src="assets/images/svg/telegram.svg" alt="Написать в Telegram">
 		</a>
-		<div id="progress">
-			<span id="progress-value">&#x1F815;</span>
-		</div>
 	</main>
 
 	<footer class="footer">
@@ -205,7 +208,7 @@
 					</div>
 					<div class="footer__item-bottom">
 						<p>
-							Данный сайт является проектом курсовым проектом студентов Московского автомобильно-дорожного
+							Данный сайт является курсовым проектом студентов Московского автомобильно-дорожного
 							государственного технического университета.
 						</p>
 					</div>
@@ -254,6 +257,7 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Modal Windows -->
 	<div id="ex1" class="modal">
 		<div class="modal-wrapper">
 			<div class="modal__title">
@@ -270,7 +274,15 @@
 			</p>
 		</div>
 	</div>
+	
 	<div class="cursor"></div>
+	<div class="container">
+		<div id="progress">
+			<span id="progress-value">
+				<img src="assets/images/svg/arrow-top.svg" alt="">
+			</span>
+		</div>
+	</div>
 	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
 		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
