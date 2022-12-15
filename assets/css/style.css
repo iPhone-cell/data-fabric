@@ -1613,7 +1613,11 @@ a.close-modal {
 
 @media (max-height: 600px) {
     .intro__content {
-        margin-top: 150px;
+        margin-top: 120px;
+    }
+
+    .intro__content h1 {
+        font-size: 3rem;
     }
 
     .intro__content p {
