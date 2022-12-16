@@ -795,7 +795,10 @@ a.close-modal {
   -webkit-background-position: center;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
+  -webkit-background-attachment: fixed;
   background-attachment: fixed;
 }
 .intro__item:nth-child(1) {

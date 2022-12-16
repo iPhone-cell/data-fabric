@@ -733,7 +733,7 @@ button {
 
 #header.header__main-page {
     position: absolute;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 header a {
@@ -1602,6 +1602,10 @@ a.close-modal {
     .video .video__block-play img {
         width: 50px;
     }
+
+    .about__card {
+        height: auto;
+    }
 }
 
 @media (max-width: 410px) {
@@ -1683,7 +1687,7 @@ a.close-modal {
 
 @media (max-height: 520px) {
     .intro__content h1 {
-        font-size: 6rem;
+        font-size: 2.5rem;
     }
 
     .header .header__main {
@@ -1692,6 +1696,7 @@ a.close-modal {
 
     .slick-arrow {
         display: none;
+        opacity: 0;
     }
 }
 
