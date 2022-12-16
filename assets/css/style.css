@@ -881,6 +881,7 @@ a.close-modal {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 }
 

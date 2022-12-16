@@ -792,14 +792,14 @@ a.close-modal {
 
 .intro__item {
   height: 100vh;
-  -webkit-background-position: center;
   background-position: center;
+  -webkit-background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -webkit-background-size: cover;
+  -webkit-background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-attachment: fixed;
+  -webkit-background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
 }
 .intro__item:nth-child(1) {
   background-image: url("../images/header/bg.jpg");
