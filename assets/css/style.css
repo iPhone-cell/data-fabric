@@ -877,6 +877,7 @@ a.close-modal {
 
 .intro__item {
     height: 100vh;
+    -webkit-background-position: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1108,10 +1109,10 @@ a.close-modal {
 
 .video {
     padding-bottom: 150px;
-    position: relative;
 }
 
 .video .video__block {
+    position: relative;
     display: block;
     text-align: center;
     max-width: 1495px;
@@ -1124,7 +1125,8 @@ a.close-modal {
 .video .video__block-play {
     display: block;
     position: absolute;
-    left: 40%;
+    width: 100%;
+    text-align: center;
     top: 40%;
     z-index: 2;
 }
@@ -1255,12 +1257,6 @@ a.close-modal {
     pointer-events: none;
 }
 
-.video .video__block-play {
-    width: 100%;
-    text-align: center;
-    left: 0;
-}
-
 @media (max-width: 1566px) {
     .container {
         padding: 0 25px;
@@ -1277,6 +1273,10 @@ a.close-modal {
 
     .about__card-text {
         padding-right: 20px;
+    }
+
+    .about__card {
+        height: 719px;
     }
 }
 
@@ -1318,6 +1318,11 @@ a.close-modal {
 @media (max-width: 1025px) {
     .intro__content h1 {
         font-size: 10.4rem;
+    }
+
+    .intro__item:nth-child(2) {
+        -webkit-background-position: left;
+        background-position: left;
     }
 }
 
@@ -1478,7 +1483,7 @@ a.close-modal {
 
 .intro__content.header__main-title_active {
     transition: all 0.3s ease;
-    margin-top: 416px;
+    margin-top: 420px;
 }
 
 .sidebar {
@@ -1584,13 +1589,24 @@ a.close-modal {
     }
 
     .slick-arrow {
+        -webkit-display: none;
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .video .video__block-play {
+        top: 40%;
+    }
+
+    .video .video__block-play img {
+        width: 50px;
     }
 }
 
 @media (max-width: 410px) {
     .video .video__block-play {
-        top: 45%;
+        top: 35%;
     }
 
     .video .video__block-play img {
@@ -1615,6 +1631,23 @@ a.close-modal {
 
     .modal.modal-video {
         height: auto;
+    }
+
+    .modal-wrapper {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .form__text {
+        width: 200px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .form__btn {
+        width: 200px;
     }
 }
 
