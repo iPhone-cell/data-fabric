@@ -448,6 +448,48 @@ textarea {
     line-height: 2.2rem;
 }
 
+.company-main {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.company-main h1 {
+    margin-bottom: 30px;
+}
+
+.company-main ul {
+    list-style-position: inside;
+}
+
+.company-main li {
+    text-align: left;
+}
+
+.company-page__content {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.company-page__content p {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.company-page__content p.last {
+    margin-bottom: 100px;
+}
+
+.company-main-wrapper {
+    margin-top: 50px;
+}
+
+.company-main h1 {
+    line-height: 1.4;
+}
+
 @media (max-width: 1100px) {
     .tabs-wrapper {
         -ms-flex-direction: column;
@@ -612,7 +654,7 @@ button {
     place-items: center;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    cursor: none;
 }
 
 #progress-value {
@@ -1330,10 +1372,6 @@ a.close-modal {
 }
 
 @media (max-width: 910px) {
-    .cursor, .link-grow {
-        display: none;
-    }
-
     .header__logo-mobile {
         display: block;
     }

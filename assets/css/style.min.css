@@ -396,7 +396,7 @@ textarea {
 }
 .about-page__content p {
   margin-bottom: 75px;
-  line-height: 2.2rem;
+  line-height: 1.5;
 }
 .about-page__content p:last-child {
   margin-bottom: 0;
@@ -428,6 +428,11 @@ textarea {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+}
+.company-main h1 {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .company-main h1 {
@@ -461,6 +466,16 @@ textarea {
 
 .company-main h1 {
   line-height: 1.4;
+}
+
+.intro__content4,
+.intro__content5 {
+  transition: all 0.3s ease;
+}
+
+.intro__content4.header__main-title_active,
+.intro__content5.header__main-title_active {
+  margin-top: 400px;
 }
 
 @media (max-width: 1100px) {
@@ -590,8 +605,8 @@ button {
 
 .telegram {
   position: fixed;
-  right: 100px;
-  bottom: 67px;
+  right: 32px;
+  bottom: 100px;
   z-index: 3;
 }
 .telegram:hover {
@@ -601,8 +616,8 @@ button {
 #progress {
   z-index: 4;
   position: fixed;
-  bottom: 133px;
-  right: 100px;
+  bottom: 170px;
+  right: 32px;
   height: 50px;
   width: 50px;
   display: none;
@@ -833,13 +848,9 @@ a.close-modal {
 .intro__item {
   height: 100vh;
   background-position: center;
-  -webkit-background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
   background-attachment: fixed;
-  -webkit-background-attachment: fixed;
 }
 .intro__item:nth-child(1) {
   background-image: url("../images/header/bg.jpg");
@@ -1003,7 +1014,7 @@ a.close-modal {
 }
 .about__card-text {
   margin: 44px 0;
-  padding-left: 42px;
+  padding: 0 42px;
   line-height: 1.9rem;
 }
 
@@ -1172,11 +1183,8 @@ a.close-modal {
     width: 32%;
     margin-bottom: 50px;
   }
-  .telegram, #progress {
-    right: 20px;
-  }
   .about__card-text {
-    padding-right: 20px;
+    padding: 0 20px;
   }
   .about__card {
     height: 719px;
@@ -1214,11 +1222,13 @@ a.close-modal {
     font-size: 10.4rem;
   }
   .intro__item:nth-child(2) {
-    -webkit-background-position: left;
     background-position: left;
   }
 }
 @media (max-width: 910px) {
+  .telegram-mobile {
+    display: block;
+  }
   .header__logo-mobile {
     display: block;
   }
@@ -1229,7 +1239,7 @@ a.close-modal {
     width: 100%;
     padding: 146px 0 40px 0;
     position: absolute;
-    top: -400%;
+    top: -480%;
     left: 0;
     flex-direction: column;
     justify-content: center;
@@ -1302,7 +1312,8 @@ a.close-modal {
     display: none;
   }
   #progress {
-    bottom: 20px;
+    bottom: 100px;
+    right: 30px;
   }
   .header__call.menu__item {
     display: flex;
@@ -1333,7 +1344,7 @@ a.close-modal {
 }
 .intro__content.header__main-title_active {
   transition: all 0.3s ease;
-  margin-top: 420px;
+  margin-top: 455px;
 }
 
 .sidebar {
@@ -1502,6 +1513,9 @@ a.close-modal {
   .slick-arrow {
     display: none;
     opacity: 0;
+  }
+  .header__call.menu__item .telegram-mobile {
+    margin-right: 100px;
   }
 }
 @media (max-height: 440px) {
