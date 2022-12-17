@@ -616,7 +616,7 @@ button {
 #progress {
   z-index: 4;
   position: fixed;
-  bottom: 170px;
+  bottom: 110px;
   right: 32px;
   height: 50px;
   width: 50px;
